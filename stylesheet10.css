@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=IBM+Plex+Sans:wght@700&family=League+Spartan:wght@200;400&family=Nerko+One&family=Nunito:ital,wght@1,600&display=swap');
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Tangerine', serif;
+    font-size: 23px;
+    text-shadow: 4px 4px 4px #aaa;
+
+}
+
+.images
+{
+    height: 350px;
+    width:  350px;
+    border-radius: 10% 10% ;
+}
+
+.wrapper
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.container
+{
+    max-width: 1200px;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.container  h1
+
+ {
+    text-align: center;
+    margin: 20px 0;
+   margin-bottom: 20px;
+   font-size: 3rem;
+}
+
+.gallery
+{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.card
+{
+    width: 26%;
+    position: relative;
+    margin-bottom: 0;
+    margin-right: 0;
+    
+}
+
+.card img
+{
+   width: 100%;
+   filter:grayscale(100%);
+   box-shadow: 0 0 10px black;
+   object-fit:cover;
+   
+
+}
+
+.card:hover
+{
+    transform: scale(1.04);
+    filter: drop-shadow(0 0 10px black);
+    transition: 0.3s;
+}
+
+.card:hover img
+{
+    filter:grayscale(0%);
+}
+
+.card figcaption
+{
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 22px;
+    font-weight: 900;
+    border-radius: 0 0 10px 10px;
+    color:hsl(169, 100%, 61%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+
+}
+
+.card:hover figcaption
+{
+    opacity: 1;
+    transform: scale(1.03);
+}
